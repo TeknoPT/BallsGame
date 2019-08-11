@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui printsupport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -25,10 +25,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
+        ball.cpp \
+        balls.cpp \
         main.cpp \
         mainwindow.cpp
 
 HEADERS += \
+        ball.h \
+        balls.h \
         mainwindow.h
 
 FORMS += \

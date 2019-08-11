@@ -234,6 +234,7 @@ Makefile: ../BallsGame/BallsGame.pro ../../../../Qt/5.12.4/mingw73_64/mkspecs/wi
 		../../../../Qt/5.12.4/mingw73_64/mkspecs/features/yacc.prf \
 		../../../../Qt/5.12.4/mingw73_64/mkspecs/features/lex.prf \
 		../BallsGame/BallsGame.pro \
+		../../../../Qt/5.12.4/mingw73_64/lib/Qt5PrintSupport.prl \
 		../../../../Qt/5.12.4/mingw73_64/lib/Qt5Widgets.prl \
 		../../../../Qt/5.12.4/mingw73_64/lib/Qt5Gui.prl \
 		../../../../Qt/5.12.4/mingw73_64/lib/Qt5Core.prl \
@@ -410,6 +411,7 @@ Makefile: ../BallsGame/BallsGame.pro ../../../../Qt/5.12.4/mingw73_64/mkspecs/wi
 ../../../../Qt/5.12.4/mingw73_64/mkspecs/features/yacc.prf:
 ../../../../Qt/5.12.4/mingw73_64/mkspecs/features/lex.prf:
 ../BallsGame/BallsGame.pro:
+../../../../Qt/5.12.4/mingw73_64/lib/Qt5PrintSupport.prl:
 ../../../../Qt/5.12.4/mingw73_64/lib/Qt5Widgets.prl:
 ../../../../Qt/5.12.4/mingw73_64/lib/Qt5Gui.prl:
 ../../../../Qt/5.12.4/mingw73_64/lib/Qt5Core.prl:

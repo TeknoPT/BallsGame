@@ -11,6 +11,11 @@
 #include <QGraphicsItem>
 #include <QSize>
 #include <QKeyEvent>
+#include <array>
+#include <QTimer>
+#include "ball.h"
+#include "balls.h"
+
 
 namespace Ui {
 class MainWindow;
@@ -21,26 +26,30 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
+    // Keypressed
     void keyPressEvent(QKeyEvent *e);
+    
+    // Constructor | Creating the MainWindow
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-signals: // Event
-       void clickAddCoins();
+
 
 private slots:
-       void on_creditsInButton_clicked();
+    // Function button on click creadits in.
+    void on_creditsInButton_clicked();
 
-       void on_creditsOutButton_clicked();
+    // Function button on click creadits out.
+    void on_creditsOutButton_clicked();
 
-       void on_startButton_clicked();
+    // Function button on click start game.
+    void on_startButton_clicked();
+
+    //void endGame();
 
 private:
     // Main
-    QGraphicsScene *scene;
-    QGraphicsEllipseItem* ellipse;
-    QGraphicsRectItem *rectangle;
-    QGraphicsTextItem *text;
+    QGraphicsScene *scene = nullptr;
 
     Ui::MainWindow *ui;
     // Variables
@@ -55,9 +64,12 @@ private:
     void startGame();
     void pauseGame();
     void resumeGame();
-    void endGame();
     void runView();
     bool isGameValid();
+
+    //Balls
+    Balls * allBalls = nullptr;
+
 };
 
 #endif // MAINWINDOW_H
